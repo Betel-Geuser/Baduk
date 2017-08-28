@@ -1,0 +1,29 @@
+@import 'normalize';
+@import 'reset';
+@import 'colors';
+
+html {
+    background-color: #101;
+    font-size: 18px;
+    color: $grau;
+}
+
+body {
+    max-width: 992px;
+    min-height: 300px;
+    margin: 0 auto;
+    background-color: $paper;
+    // border-radius: .25em;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+main {
+    padding: 0 1em;
+}
+
+footer {
+    margin-top: 1em;
+}

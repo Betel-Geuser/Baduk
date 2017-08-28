@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="/styles/styles.css">
+    </head>
+    <body class="{{ body_class }}">
+        {% include "blocks/header.njk" %}
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+        {% include "blocks/footer.njk" %}
+    </body>
+</html>
