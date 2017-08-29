@@ -23,7 +23,7 @@ body:after {
     max-width: 992px;
     width: 100%;
     background-blend-mode: soft-light;
-    background: linear-gradient(rgba(0,0,0,0), #000), #CCC;
+    background: linear-gradient(rgba(0,0,0,0), #000), #BBB;
     transform-origin: top center;
     transform: rotateX(90deg) perspective(250px) rotateX(-90deg);
 }
