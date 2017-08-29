@@ -12,30 +12,52 @@ body {
     max-width: 992px;
     width: 100%;
     margin: 0 auto;
-    background-color: $paper;
+    background-color: $parchment;
 }
 
 body:after {
     position: absolute;
     z-index: 10;
     content: '';
-    height: 10px;
+    height: 15px;
     max-width: 992px;
     width: 100%;
-    background-blend-mode: soft-light;
-    background: linear-gradient(rgba(0,0,0,0), #000), #BBB;
+    background-blend-mode: darken;
+    background: linear-gradient(rgba(0,0,0,0), $grau), $parchment;
     transform-origin: top center;
     transform: rotateX(90deg) perspective(250px) rotateX(-90deg);
 }
 
+body.bg {
+    background: url('/styles/textures/white-marble-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.bg:after {
+    background-blend-mode: darken;
+    background: linear-gradient(rgba(0,0,0,0), $grau), url('/styles/textures/white-marble-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 480px) {
+    body {
+        margin-top: 1em;
+    }
+}
+
 header {
+    height: 40px;
     margin-bottom: 1em;
 }
 
 main {
+    height: 500px;
     padding: 0 1em;
 }
 
 footer {
+    height: 200px;
     margin-top: 1em;
 }
