@@ -13,6 +13,7 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: $parchment;
+    background-color: green;
 }
 
 body:after {
@@ -50,14 +51,16 @@ body.bg:after {
 header {
     height: 40px;
     margin-bottom: 1em;
+    border-bottom: 1px solid $grau;
 }
 
 main {
-    height: 500px;
+    height: 300px;
     padding: 0 1em;
 }
 
 footer {
     height: 200px;
     margin-top: 1em;
+    border-top: 1px solid $grau;
 }
