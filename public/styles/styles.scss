@@ -2,9 +2,12 @@
 @import 'reset';
 @import 'colors';
 
+$bg-color: $grau;
+$block-color: $parchment;
+
 html {
-    background-color: $grau;
-    font-size: 18px;
+    background-color: $bg-color;
+    font-size: 22px;
     color: $grau;
 }
 
@@ -12,7 +15,7 @@ body {
     max-width: 992px;
     width: 100%;
     margin: 0 auto;
-    background-color: $parchment;
+    background-color: $block-color;
 }
 
 body:after {
@@ -23,7 +26,7 @@ body:after {
     max-width: 992px;
     width: 100%;
     background-blend-mode: darken;
-    background: linear-gradient(rgba(0,0,0,0), $grau), $parchment;
+    background: linear-gradient(rgba(0,0,0,0), $bg-color), $block-color;
     transform-origin: top center;
     transform: rotateX(90deg) perspective(250px) rotateX(-90deg);
 }
@@ -36,7 +39,7 @@ body.bg {
 
 body.bg:after {
     background-blend-mode: darken;
-    background: linear-gradient(rgba(0,0,0,0), $grau), url('/styles/textures/white-marble-3.jpg');
+    background: linear-gradient(rgba(0,0,0,0), $bg-color), url('/styles/textures/white-marble-3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -50,7 +53,7 @@ body.bg:after {
 header {
     height: 40px;
     margin-bottom: 1em;
-    border-bottom: 1px solid $grau;
+    border-bottom: 1px solid $bg-color;
 }
 
 main {
@@ -61,5 +64,5 @@ main {
 footer {
     height: 200px;
     margin-top: 1em;
-    border-top: 1px solid $grau;
+    border-top: 1px solid $bg-color;
 }

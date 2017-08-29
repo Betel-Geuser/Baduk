@@ -394,15 +394,14 @@ p {
 
 html {
   background-color: #16161D;
-  font-size: 18px;
+  font-size: 22px;
   color: #16161D; }
 
 body {
   max-width: 992px;
   width: 100%;
   margin: 0 auto;
-  background-color: #FFFFF0;
-  background-color: green; }
+  background-color: #FFFFF0; }
 
 body:after {
   position: absolute;
