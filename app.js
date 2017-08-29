@@ -46,6 +46,10 @@ app.use(function (err, req, res, next) {
   res.status(500).send('Something broke!')
 })
 
-app.listen(3000, function () {
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+// var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
     console.log('boot...');
 });
