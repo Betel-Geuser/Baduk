@@ -5,6 +5,7 @@ var path = require('path');
 const app = express();
 const routes = require('./routes');
 const router = express.Router();
+const http = require('http');
 
 app.use(sassMiddleware({
     /* Options */
@@ -53,3 +54,11 @@ var port = process.env.PORT || 3000;
 app.listen(port, function () {
     console.log('boot...');
 });
+
+/*
+http.createServer(function (req, res) {
+    console.log('boot...');
+    //res.writeHead(200, {'Content-Type': 'text/plain'});
+    //res.end('Hello, world! [helloworld sample]'); 
+}).listen(port, function () { console.log('boot...'); });
+*/
