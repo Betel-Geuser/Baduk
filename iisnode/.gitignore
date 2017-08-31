@@ -1,0 +1,4 @@
+# commit this folder, but none of it's children
+*
+*/
+!.gitignore
