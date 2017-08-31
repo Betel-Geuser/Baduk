@@ -56,9 +56,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# iisnode logs
-# iisnode/*
-
-# exception to the rule
-# !issnode/.gitkeep 
